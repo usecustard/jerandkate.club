@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: $purple url('../img/christine_baranski.jpg') repeat center center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header      header  header"
+        "content     content content"
+        "footer      footer  footer";
+}
+
+.main-header {
+    grid-area: header;
+    width: 100%;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+.main-content {
+    grid-area: content;
+}

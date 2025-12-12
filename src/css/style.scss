@@ -1,0 +1,37 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+// Gutenberg - mixins
+@import "mixins/font-size";
+@import "mixins/line-height";
+@import "mixins/margin";
+@import "mixins/padding";
+
+// Base
+@import "base/normalize"; // from HTML5 boilerplate
+@import "base/main";      // from HTML5 boilerplate
+@import "base/extras";    // from HTML5 boilerplate
+@import "base/fonts";
+@import "base/variables";
+@import "base/layout";
+
+// Gutenberg select modules
+@import "typography/base";
+@import "typography/alignment";
+@import "typography/anchor";
+@import "typography/figure";
+@import "typography/heading";
+@import "typography/horizontal-rule";
+@import "typography/list";
+@import "typography/quote";
+@import "typography/selection";
+@import "typography/table";
+
+// Theme
+@import "theme/footer";
+@import "theme/hero";
+@import "theme/location";
+@import "theme/buttons";
+@import "theme/cta";

@@ -1,0 +1,68 @@
+.location {
+    width: 100%;
+
+    @media only screen and (min-width: $small-devices) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    &__content-wrapper {
+        padding: $mobile-padding;
+        background-color: $purple;
+        color: white;
+
+        @media only screen and (min-width: $small-devices) {
+            padding: $desktop-padding;
+            flex: 1 1 auto;
+            max-width: 50%;
+        }
+
+    }
+
+    &__content {
+        margin: 0 auto;
+        max-width: #{ $max-width + 'em' };
+
+        &__title {
+            color: white;
+            margin-top: 0;
+        }
+
+        .footnote {
+            font-size: 0.8em;
+            line-height: 1.4;
+            color: rgba(255,255,255,0.8);
+            font-style: italic;
+            max-width: #{$max-width * 0.75 + 'em'};
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    }
+
+    &__map {
+        width: 100%;
+        display: block;
+        position: relative;
+
+        @media only screen and (min-width: $small-devices) {
+            max-width: 50%;
+            flex: 1 1 auto;
+        }
+
+        #map {
+            @media only screen and (max-width: $small-devices) {
+                min-height: $height-buffer;
+            }
+
+            @media only screen and (min-width: $small-devices) {
+                height: 100%;
+            }
+
+        }
+
+    }
+
+}

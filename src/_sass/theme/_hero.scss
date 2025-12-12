@@ -1,0 +1,106 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    background-image: url( '../img/dotties.jpg' );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__content {
+        border-top: 10px solid $red;
+        border-left: 10px solid $red;
+        border-bottom: 10px solid $red;
+        width: 100%;
+
+        @media only screen and (min-width: $small-devices) {
+            border: none;
+            margin-left: $desktop-padding;
+            flex: 1 1 auto;
+            max-width: 35%;
+            margin-top: -1em;
+        }
+
+    }
+
+    &__title {
+        font-size: 2.5em;
+        line-height: 1.2;
+        margin: 0;
+        color: white;
+        text-shadow: 2px 2px 1px #000;
+        padding: 1rem 2rem 0.5rem;
+
+        @media only screen and (min-width: $small-devices) {
+            font-size: 3.5em;
+            line-height: 1.2;
+        }
+
+        @media only screen and (min-width: $large-devices) {
+            font-size: 5em;
+            line-height: 1.2;
+        }
+
+        &--jeremy {
+            display: block;
+        }
+
+        &--amp {
+            font-size: 2em;
+            line-height: 1;
+            float: left;
+            display: block;
+        }
+
+        &--kate {
+            display: inline-block;
+        }
+
+    }
+
+    &__subtitle {
+        text-shadow: 2px 2px 1px $gray-dark;
+        padding: 0.5rem 2rem 1rem;
+        line-height: $line-height;
+        color: white;
+        text-transform: capitalize;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        @media only screen and (min-width: $small-devices) {
+            border-bottom: 10px solid $yellow;
+            border-left: 10px solid $yellow;
+        }
+
+    }
+
+    &__milkshake {
+        background-image: url( '../img/milkshake.png' );
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-right: 10px solid $red;
+        width: 100%;
+
+        @media only screen and (max-width: $small-devices) {
+            min-height: $height-buffer;
+        }
+
+        @media only screen and (min-width: $small-devices) {
+            border: none;
+            margin-left: auto;
+            flex: 1 1 auto;
+            max-width: 55%;
+            min-height: 450px;
+        }
+
+        @media only screen and (min-width: $large-devices) {
+            min-height: 650px;
+        }
+
+    }
+
+}

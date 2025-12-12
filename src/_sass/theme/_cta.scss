@@ -1,0 +1,47 @@
+
+.cta {
+    background-color: $red;
+    color: #fff;
+
+    &__content-wrapper {
+        padding: $mobile-padding;
+        display: block;
+        max-width: #{ $max-width * 1.5 + 'em' };
+        margin: 0 auto;
+
+        @media only screen and (min-width: $small-devices) {
+            padding: $desktop-padding;
+        }
+
+    }
+
+    &__content {
+        margin: 0 auto;
+        max-width: #{ $max-width + 'em' };
+
+        h2,
+        h3 {
+            color: white;
+        }
+
+        :first-child {
+            margin-top: 0;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .secret-link {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+        }
+
+    }
+
+}

@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://jerandkate.netlify.com/* https://www.jerandkate.club/:splat 301!
